@@ -2,188 +2,188 @@ const cardsList = {
     phantomBlood: [
         {
             cardName: "Another Hamon!",
-            cardImage: "/cards/01-phantom-blood/AnotherHamon.jpg",
+            cardImage: "cards/01-phantom-blood/AnotherHamon.jpg",
         },
         {
             cardName: "Aztec Chief",
-            cardImage: "/cards/01-phantom-blood/AztecChief.jpg",
+            cardImage: "cards/01-phantom-blood/AztecChief.jpg",
         },
         {
             cardName: "Bruford",
-            cardImage: "/cards/01-phantom-blood/Bruford.jpg",
+            cardImage: "cards/01-phantom-blood/Bruford.jpg",
         },
         {
             cardName: "Bruford & Tarkus",
-            cardImage: "/cards/01-phantom-blood/Bruford&Tarkus.jpg",
+            cardImage: "cards/01-phantom-blood/Bruford&Tarkus.jpg",
         },
         {
             cardName: "Danny",
-            cardImage: "/cards/01-phantom-blood/Danny.jpg",
+            cardImage: "cards/01-phantom-blood/Danny.jpg",
         },
         {
             cardName: "Dario Brando",
-            cardImage: "/cards/01-phantom-blood/DarioBrando.jpg",
+            cardImage: "cards/01-phantom-blood/DarioBrando.jpg",
         },
         {
             cardName: "Dark Lord Dio",
-            cardImage: "/cards/01-phantom-blood/DarkLordDio.jpg",
+            cardImage: "cards/01-phantom-blood/DarkLordDio.jpg",
         },
         {
             cardName: "Dio Brando",
-            cardImage: "/cards/01-phantom-blood/Dio.jpg",
+            cardImage: "cards/01-phantom-blood/Dio.jpg",
         },
         {
             cardName: "Dio's Head",
-            cardImage: "/cards/01-phantom-blood/DioHead.jpg",
+            cardImage: "cards/01-phantom-blood/DioHead.jpg",
         },
         {
             cardName: "Dio of London",
-            cardImage: "/cards/01-phantom-blood/DioOfLondon.jpg",
+            cardImage: "cards/01-phantom-blood/DioOfLondon.jpg",
         },
         {
             cardName: "Dio The Boxer",
-            cardImage: "/cards/01-phantom-blood/DioTheBoxer.jpg",
+            cardImage: "cards/01-phantom-blood/DioTheBoxer.jpg",
         },
         {
             cardName: "Dio's Vampiric Followers",
-            cardImage: "/cards/01-phantom-blood/DioVampiricFollowers.jpg",
+            cardImage: "cards/01-phantom-blood/DioVampiricFollowers.jpg",
         },
         {
             cardName: "Doobie",
-            cardImage: "/cards/01-phantom-blood/Doobie.jpg",
+            cardImage: "cards/01-phantom-blood/Doobie.jpg",
         },
         {
             cardName: "Erina Pendleton",
-            cardImage: "/cards/01-phantom-blood/Erina.jpg",
+            cardImage: "cards/01-phantom-blood/Erina.jpg",
         },
         {
             cardName: "George Joestar",
-            cardImage: "/cards/01-phantom-blood/GeorgeJoestar.jpg",
+            cardImage: "cards/01-phantom-blood/GeorgeJoestar.jpg",
         },
         {
             cardName: "Goddess Statue",
-            cardImage: "/cards/01-phantom-blood/GoddessStatue.jpg",
+            cardImage: "cards/01-phantom-blood/GoddessStatue.jpg",
         },
         {
             cardName: "Hamon Cutter!",
-            cardImage: "/cards/01-phantom-blood/HamonCutter.jpg",
+            cardImage: "cards/01-phantom-blood/HamonCutter.jpg",
         },
         {
             cardName: "Hamon Over Frog",
-            cardImage: "/cards/01-phantom-blood/HamonOverFrog.jpg",
+            cardImage: "cards/01-phantom-blood/HamonOverFrog.jpg",
         },
         {
             cardName: "Hamon Warrior Dire",
-            cardImage: "/cards/01-phantom-blood/HamonWarriorDire.jpg",
+            cardImage: "cards/01-phantom-blood/HamonWarriorDire.jpg",
         },
         {
             cardName: "Jack The Ripper",
-            cardImage: "/cards/01-phantom-blood/JackTheRipper.jpg",
+            cardImage: "cards/01-phantom-blood/JackTheRipper.jpg",
         },
         {
             cardName: "Jonathan & Dio",
-            cardImage: "/cards/01-phantom-blood/Jonathan&Dio.jpg",
+            cardImage: "cards/01-phantom-blood/Jonathan&Dio.jpg",
         },
         {
             cardName: "Jonathan & Erina",
-            cardImage: "/cards/01-phantom-blood/Jonathan&Erina.jpg",
+            cardImage: "cards/01-phantom-blood/Jonathan&Erina.jpg",
         },
         {
             cardName: "Jonatan Joestar",
-            cardImage: "/cards/01-phantom-blood/JonathanJoestar.jpg",
+            cardImage: "cards/01-phantom-blood/JonathanJoestar.jpg",
         },
         {
             cardName: "Jonathan The Boxer",
-            cardImage: "/cards/01-phantom-blood/JonathanTheBoxer.jpg",
+            cardImage: "cards/01-phantom-blood/JonathanTheBoxer.jpg",
         },
         {
             cardName: "Jonathan & Zeppeli",
-            cardImage: "/cards/01-phantom-blood/Jonathan&Zeppeli.jpg",
+            cardImage: "cards/01-phantom-blood/Jonathan&Zeppeli.jpg",
         },
         {
             cardName: "Life Magnetism Overdrive",
-            cardImage: "/cards/01-phantom-blood/LifeMagnetismOverdrive.jpg",
+            cardImage: "cards/01-phantom-blood/LifeMagnetismOverdrive.jpg",
         },
         {
             cardName: "Mask Test Subject",
-            cardImage: "/cards/01-phantom-blood/MaskTestSubject.jpg",
+            cardImage: "cards/01-phantom-blood/MaskTestSubject.jpg",
         },
         {
             cardName: "Metal Silver Overdrive!",
-            cardImage: "/cards/01-phantom-blood/MetalSilverOverdrive.jpg",
+            cardImage: "cards/01-phantom-blood/MetalSilverOverdrive.jpg",
         },
         {
             cardName: "Speedwagon",
-            cardImage: "/cards/01-phantom-blood/Speedwagon.jpg",
+            cardImage: "cards/01-phantom-blood/Speedwagon.jpg",
         },
         {
             cardName: "Speedwagon In The City Of Corpses",
             cardImage:
-                "/cards/01-phantom-blood/SpeedWagonInTheCityOfCorpses.jpg",
+                "cards/01-phantom-blood/SpeedWagonInTheCityOfCorpses.jpg",
         },
         {
             cardName: "Stone Mask",
-            cardImage: "/cards/01-phantom-blood/StoneMask.jpg",
+            cardImage: "cards/01-phantom-blood/StoneMask.jpg",
         },
         {
             cardName: "Straizo",
-            cardImage: "/cards/01-phantom-blood/Straizo.jpg",
+            cardImage: "cards/01-phantom-blood/Straizo.jpg",
         },
         {
             cardName: "Sunlight Yellow Overdrive!",
-            cardImage: "/cards/01-phantom-blood/SunlightYellowOverdrive.jpg",
+            cardImage: "cards/01-phantom-blood/SunlightYellowOverdrive.jpg",
         },
         {
             cardName: "Tarkus",
-            cardImage: "/cards/01-phantom-blood/Tarkus.jpg",
+            cardImage: "cards/01-phantom-blood/Tarkus.jpg",
         },
         {
             cardName: "Tonpetty",
-            cardImage: "/cards/01-phantom-blood/Tonpetty.jpg",
+            cardImage: "cards/01-phantom-blood/Tonpetty.jpg",
         },
         {
             cardName: "Turquoise Blue Overdrive!",
-            cardImage: "/cards/01-phantom-blood/TurquoiseBlueOverdrive.jpg",
+            cardImage: "cards/01-phantom-blood/TurquoiseBlueOverdrive.jpg",
         },
         {
             cardName: "Ultimate Deeppass Overdrive!",
-            cardImage: "/cards/01-phantom-blood/UltimateDeepPassOverdrive.jpg",
+            cardImage: "cards/01-phantom-blood/UltimateDeepPassOverdrive.jpg",
         },
         {
             cardName: "Vampire Dio",
-            cardImage: "/cards/01-phantom-blood/VampireDio.jpg",
+            cardImage: "cards/01-phantom-blood/VampireDio.jpg",
         },
         {
             cardName: "Wang Chan",
-            cardImage: "/cards/01-phantom-blood/WangChan.jpg",
+            cardImage: "cards/01-phantom-blood/WangChan.jpg",
         },
         {
             cardName: "Will A. Zeppeli",
-            cardImage: "/cards/01-phantom-blood/WillAZeppeli.jpg",
+            cardImage: "cards/01-phantom-blood/WillAZeppeli.jpg",
         },
         {
             cardName: "Young Dio",
-            cardImage: "/cards/01-phantom-blood/YoungDio.jpg",
+            cardImage: "cards/01-phantom-blood/YoungDio.jpg",
         },
         {
             cardName: "Young Jonathan",
-            cardImage: "/cards/01-phantom-blood/YoungJonathan.jpg",
+            cardImage: "cards/01-phantom-blood/YoungJonathan.jpg",
         },
         {
             cardName: "Zombie Man & Dog Hybrid",
-            cardImage: "/cards/01-phantom-blood/ZombieManDogHybrid.jpg",
+            cardImage: "cards/01-phantom-blood/ZombieManDogHybrid.jpg",
         },
         {
             cardName: "Zombies",
-            cardImage: "/cards/01-phantom-blood/Zombies.jpg",
+            cardImage: "cards/01-phantom-blood/Zombies.jpg",
         },
         {
             cardName: "Zombie Town Citizen",
-            cardImage: "/cards/01-phantom-blood/ZombieTownCitizen.jpg",
+            cardImage: "cards/01-phantom-blood/ZombieTownCitizen.jpg",
         },
         {
             cardName: "Zoom Punch",
-            cardImage: "/cards/01-phantom-blood/ZoomPunch.jpg",
+            cardImage: "cards/01-phantom-blood/ZoomPunch.jpg",
         },
     ],
 
