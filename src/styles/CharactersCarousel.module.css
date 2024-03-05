@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
+:root {
+    --font-character-name: "Babylonica", cursive;
+    --font-season-title: "Fleur De Leah", cursive;
+}
+
+.characters-carousel {
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+}
+
+.characters-carousel > button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(#00000055, #00000055);
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff33;
+    cursor: pointer;
+    transition: all 300ms ease;
+    z-index: 200;
+    animation-name: appearButton;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    opacity: 0;
+}
+.characters-carousel > button:hover {
+    scale: 1.25;
+}
+
+.characters-carousel > button:active {
+    scale: 0.9;
+}
+
+.characters-carousel > button:first-of-type {
+    right: -25px;
+    animation-delay: 5500ms;
+}
+
+.characters-carousel > button:last-of-type {
+    animation-delay: 5000ms;
+    left: -25px;
+}
+
+.characters-carousel > .character {
+    background-image: url("./assets/images/card-background.png");
+    background-size: cover;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid #00000022;
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    opacity: 0;
+}
+
+.characters-carousel > div.character:first-of-type {
+    rotate: -5deg;
+    z-index: 100;
+    animation: appearCharacter 500ms ease-in-out forwards 4500ms;
+}
+
+/* Adjust jonathan's image to the center. */
+.characters-carousel > div.character:first-of-type > img {
+    transform: translate(20px, 0px);
+}
+
+.characters-carousel > .character:nth-of-type(2) {
+    rotate: 5deg;
+    z-index: 90;
+    animation: appearCharacter 500ms ease-in-out forwards 4000ms;
+}
+
+.characters-carousel > .character:nth-of-type(3) {
+    rotate: 9deg;
+    translate: 5px -15px;
+    z-index: 80;
+    animation: appearCharacter 500ms ease-in-out forwards 3500ms;
+}
+
+.characters-carousel > .character:nth-of-type(4) {
+    rotate: 3deg;
+    translate: -10px 0px;
+    z-index: 70;
+    animation: appearCharacter 500ms ease-in-out forwards 3000ms;
+}
+
+.characters-carousel > .character:nth-of-type(5) {
+    rotate: -10deg;
+    translate: -5px 0px;
+    z-index: 60;
+    animation: appearCharacter 500ms ease-in-out forwards 2500ms;
+}
+
+.characters-carousel > .character:last-of-type {
+    rotate: -7deg;
+    translate: -5px -7px;
+    z-index: 50;
+    animation: appearCharacter 500ms ease-in-out forwards 2000ms;
+}
+
+.characters-carousel > .character > img {
+    width: 100%;
+}
+
+.characters-carousel > .character > p {
+    color: white;
+    text-shadow: black 0px 3px;
+    text-align: center;
+}
+
+.characters-carousel > .character > p:first-of-type {
+    border-radius: 10px;
+    font-family: var(--font-season-title);
+    font-size: 3rem;
+    position: absolute;
+    top: 15px;
+}
+
+/* Adjust the font size for the vento aureo season. */
+.characters-carousel > .character:nth-child(5) > p:first-of-type {
+    font-size: 2rem;
+}
+
+.characters-carousel > .character > p:last-of-type {
+    font-family: var(--font-season-title);
+    position: absolute;
+    bottom: 15px;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.active {
+    opacity: 1;
+    z-index: 100 !important;
+}
+
+@keyframes appearCharacter {
+    from {
+        opacity: 0;
+        scale: 2;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes appearButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
+:root {
+    --gold-color: #eece55;
+    --fancy-font: "Fleur De Leah", cursive;
+}
+
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+#root {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+}
+
+body {
+    background-image: linear-gradient(#000000aa, #000000aa),
+        url("./../assets/images/background.png");
+    background-size: cover;
+    display: flex;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -1,0 +1,148 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 15px;
+}
+
+.header > .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header > .logo-container > .letters {
+    display: flex;
+}
+
+.header > .logo-container > div.letters > img {
+    width: 100px;
+    transform: translateY(-200%);
+    animation: dropLetter 500ms forwards ease-in-out;
+    opacity: 0;
+}
+
+.header > .logo-container > div.letters > img:first-of-type {
+    animation: dropLetter 500ms forwards ease-in-out 200ms;
+}
+
+.header > .logo-container > div.letters > img:nth-of-type(2) {
+    width: 70px;
+    animation:
+        dropLetter 500ms forwards ease-in-out 400ms,
+        beating 5s ease-in-out infinite 3s;
+    position: relative;
+    top: -5px;
+    transform-origin: center center;
+}
+
+.header > .logo-container > div.letters > img:nth-of-type(3) {
+    animation: dropLetter 500ms forwards ease-in-out 600ms;
+}
+
+.header > .logo-container > div.letters > img:nth-of-type(4) {
+    width: 70px;
+    animation:
+        dropLetter 500ms forwards ease-in-out 800ms,
+        small-shaking 5s ease-in-out infinite 5s;
+    position: relative;
+    top: -5px;
+    transform-origin: center center;
+}
+
+.header > .logo-container > div.letters > img:last-of-type {
+    width: 50px;
+    animation: dropLetter 500ms forwards ease-in-out 1000ms;
+}
+
+.header > .logo-container > img {
+    width: 350px;
+    opacity: 0;
+    animation: appear 1500ms ease-in-out forwards 1500ms;
+}
+
+.header > .score-container {
+    position: absolute;
+    right: 15px;
+    font-family: var(--main-font);
+}
+
+.header > .score-container > p > span {
+    margin-left: 5px;
+}
+
+.header > .score-container > p:last-of-type > span {
+    color: #eece55;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes dropLetter {
+    0% {
+        transform: translateY(-100%) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(25%) scale(2);
+    }
+    100% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.02);
+    }
+    10% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.02);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes small-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    2% {
+        transform: rotate(5deg);
+    }
+    4% {
+        transform: rotate(-5deg);
+    }
+    6% {
+        transform: rotate(0deg);
+    }
+    8% {
+        transform: rotate(5deg);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    12% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,28 @@
+.select-season {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--fancy-font);
+    opacity: 0;
+    animation: appear 1s ease-in-out 6s forwards;
+}
+
+.game-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    background: transparent;
+    background-size: cover;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

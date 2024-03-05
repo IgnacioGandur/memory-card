@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+:root {
+    --main-font: "Bangers", system-ui;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 300ms linear;
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateZ(0px);
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    border: 1px solid #dcbe4e;
+    transform: translateZ(15px) scale(1.15);
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 0px 5px 5px #dcbe4e;
+}
+
+.card > .front {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.card > .front > p {
+    font-family: var(--main-font);
+    color: white;
+    width: 100%;
+    background: #000000aa;
+    position: absolute;
+    bottom: 25px;
+    padding: 10px 0px;
+}
+
+.card > .front > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.card > .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.card > .back > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rotate {
+    animation: rotate 1500ms ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    40%,
+    60% {
+        transform: perspective(1000px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+:root {
+    --main-font: "Bangers", system-ui;
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    animation: appear 1s ease-in-out 6s forwards;
+}
+
+.difficulty-container > p {
+    font-family: var(--main-font);
+    color: white;
+}
+
+.difficulty-container > .controls {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.difficulty-container > .controls > button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: none;
+    transition: all 250ms ease;
+    cursor: pointer;
+}
+
+.difficulty-container > .controls > button:hover {
+    border: 1px solid #ffffff55;
+    transform: scale(1.25);
+}
+
+.difficulty-container > .controls > button:active {
+    transform: scale(0.9);
+}
+
+.difficulty-container > .controls > button > span {
+    font-family: 1rem;
+    color: white;
+}
+
+.difficulty-container > .controls .options {
+    width: 100px;
+    position: relative;
+}
+
+.difficulty-container > .controls > .options > p {
+    font-family: var(--main-font);
+    transition: all 300ms ease-in-out;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.difficulty-container > .controls > .options > p.active {
+    opacity: 1;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
