@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import RenderCards from "./RenderCards";
 import PlayAgainScreen from "./PlayAgainScreen";
-import Styles from "./../styles/StartGame.module.css";
 import CardStyles from "./../styles/RenderCards.module.css";
 
 const StartGame = ({
@@ -162,24 +161,20 @@ const StartGame = ({
         }
     }, [selectedCards, deckOfCards]);
 
-    return (
-        <div id="cards-container" className={Styles["cards-container"]}>
-            {gameEnded ? (
-                <PlayAgainScreen
-                    playAgain={playAgain}
-                    gameResult={gameResult}
-                    currentGifs={currentGifs}
-                    resetDefaultSongList={resetDefaultSongList}
-                    resetDefaultGifs={resetDefaultGifs}
-                />
-            ) : (
-                <RenderCards
-                    deckOfCards={deckOfCards}
-                    shuffleDeck={shuffleDeck}
-                    takeTurn={takeTurn}
-                />
-            )}
-        </div>
+    return gameEnded ? (
+        <PlayAgainScreen
+            playAgain={playAgain}
+            gameResult={gameResult}
+            currentGifs={currentGifs}
+            resetDefaultSongList={resetDefaultSongList}
+            resetDefaultGifs={resetDefaultGifs}
+        />
+    ) : (
+        <RenderCards
+            deckOfCards={deckOfCards}
+            shuffleDeck={shuffleDeck}
+            takeTurn={takeTurn}
+        />
     );
 };
 

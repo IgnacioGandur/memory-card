@@ -4,6 +4,16 @@
     --main-font: "Bangers", system-ui;
 }
 
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 25px;
+}
+
 .card {
     width: 200px;
     height: 300px;
@@ -79,6 +89,28 @@
 
 .rotate {
     animation: rotate 1500ms ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+    .cards-container {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .card {
+        width: 160px;
+        height: 260px;
+    }
+
+    .card:hover,
+    .card:active {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card > .front > p {
+        bottom: 0;
+    }
 }
 
 @keyframes rotate {

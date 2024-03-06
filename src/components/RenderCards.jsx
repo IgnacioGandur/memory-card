@@ -50,7 +50,7 @@ const RenderCards = ({ deckOfCards, shuffleDeck, takeTurn }) => {
         </div>
     ));
 
-    return renderedCards;
+    return <div className={Styles["cards-container"]}>{renderedCards}</div>;
 };
 
 export default RenderCards;

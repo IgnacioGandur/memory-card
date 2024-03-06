@@ -72,6 +72,17 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+    .difficulty-container {
+        width: 100%;
+    }
+
+    .difficulty-container > .controls {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
 @keyframes appear {
     from {
         opacity: 0;

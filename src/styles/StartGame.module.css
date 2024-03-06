@@ -1,9 +1,0 @@
-.cards-container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    perspective: 1000px;
-}

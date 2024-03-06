@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -17,18 +18,18 @@
     display: flex;
 }
 
-.header > .logo-container > div.letters > img {
+.header > .logo-container > .letters > img {
     width: 100px;
     transform: translateY(-200%);
     animation: dropLetter 500ms forwards ease-in-out;
     opacity: 0;
 }
 
-.header > .logo-container > div.letters > img:first-of-type {
+.header > .logo-container > .letters > img:first-of-type {
     animation: dropLetter 500ms forwards ease-in-out 200ms;
 }
 
-.header > .logo-container > div.letters > img:nth-of-type(2) {
+.header > .logo-container > .letters > img:nth-of-type(2) {
     width: 70px;
     animation:
         dropLetter 500ms forwards ease-in-out 400ms,
@@ -38,11 +39,11 @@
     transform-origin: center center;
 }
 
-.header > .logo-container > div.letters > img:nth-of-type(3) {
+.header > .logo-container > .letters > img:nth-of-type(3) {
     animation: dropLetter 500ms forwards ease-in-out 600ms;
 }
 
-.header > .logo-container > div.letters > img:nth-of-type(4) {
+.header > .logo-container > .letters > img:nth-of-type(4) {
     width: 70px;
     animation:
         dropLetter 500ms forwards ease-in-out 800ms,
@@ -52,7 +53,7 @@
     transform-origin: center center;
 }
 
-.header > .logo-container > div.letters > img:last-of-type {
+.header > .logo-container > .letters > img:last-of-type {
     width: 50px;
     animation: dropLetter 500ms forwards ease-in-out 1000ms;
 }
@@ -64,8 +65,8 @@
 }
 
 .header > .score-container {
-    position: absolute;
-    right: 15px;
+    display: flex;
+    gap: 125px;
     font-family: var(--main-font);
 }
 
@@ -75,6 +76,39 @@
 
 .header > .score-container > p:last-of-type > span {
     color: #eece55;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header > .score-container {
+        width: 100%;
+        gap: 0;
+        position: initial;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header > .logo-container > .letters > img:first-of-type,
+    .header > .logo-container > .letters > img:nth-of-type(3) {
+        width: 80px;
+    }
+
+    .header > .logo-container > .letters > img:nth-of-type(2),
+    .header > .logo-container > .letters > img:nth-of-type(4) {
+        width: 50px;
+    }
+
+    .header > .logo-container > .letters > img:last-of-type {
+        width: 40px;
+    }
+
+    .header > .logo-container > img {
+        width: 325px;
+    }
 }
 
 @keyframes appear {

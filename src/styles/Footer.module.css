@@ -158,3 +158,36 @@
 .footer > .github:hover > a > i {
     transform: rotateY(180deg) scale(1.1);
 }
+
+@media screen and (max-width: 500px) {
+    .footer {
+        height: initial;
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .footer > .volume {
+        display: none;
+        position: initial;
+        align-items: center;
+    }
+
+    .footer > .songs {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .footer > .songs > .controls {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer > .github {
+        display: none;
+    }
+
+    .footer > .start-game {
+        width: 100%;
+        padding: 10px;
+    }
+}

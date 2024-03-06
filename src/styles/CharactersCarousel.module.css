@@ -155,6 +155,13 @@
     z-index: 100 !important;
 }
 
+/* Mobile media query. */
+@media screen and (max-width: 500px) {
+    .characters-carousel {
+        transform: scale(0.75);
+    }
+}
+
 @keyframes appearCharacter {
     from {
         opacity: 0;
