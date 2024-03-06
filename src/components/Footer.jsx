@@ -7,7 +7,6 @@ const Footer = ({
     gameStarted,
     playVoiceLine,
     currentSongList,
-    delayBeforePlayingSong,
 }) => {
     // Control song.
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,6 +77,7 @@ const Footer = ({
     useEffect(() => {
         if (!gameStarted) {
             resetDefaultSong();
+            setIsSongPlaying(false);
         }
     }, [gameStarted]);
 
@@ -139,7 +139,7 @@ const Footer = ({
                         playVoiceLine();
                         setTimeout(() => {
                             setIsSongPlaying(true);
-                        }, delayBeforePlayingSong + 1000);
+                        }, 2500);
                     }}
                 >
                     Start
