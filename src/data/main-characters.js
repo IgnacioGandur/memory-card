@@ -1,10 +1,10 @@
 // Pictures
-import jonathanJoestart from "./../assets/images/characters/pngs/jonathan-joestar.png";
-import josephJoestart from "./../assets/images/characters/pngs/joseph-joestar.png";
-import jotaroKujo from "./../assets/images/characters/pngs/jotaro-star-platinum.png";
-import josukeHigashikata from "./../assets/images/characters/pngs/josuke-crazy-diamond.png";
-import giornoGiovanna from "./../assets/images/characters/pngs/giorno-gold-experience.png";
-import jolyneKujo from "./../assets/images/characters/pngs/jolyne-stone-free.png";
+import jonathanJoestart from "./../assets/images/characters/jonathan-joestar.png";
+import josephJoestart from "./../assets/images/characters/joseph-joestar.png";
+import jotaroKujo from "./../assets/images/characters/jotaro-star-platinum.png";
+import josukeHigashikata from "./../assets/images/characters/josuke-crazy-diamond.png";
+import giornoGiovanna from "./../assets/images/characters/giorno-gold-experience.png";
+import jolyneKujo from "./../assets/images/characters/jolyne-stone-free.png";
 // Voice lines
 import jonathanVoiceLine from "./../assets/voice-lines/jonathan-voice-line.wav";
 import josephVoiceLine from "./../assets/voice-lines/joseph-voice-line.wav";

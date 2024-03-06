@@ -206,7 +206,7 @@ const cardsList = {
         },
         {
             cardName: "Donovan",
-            cardImage: "/cards/02-battle-tendency/Donovan.jpg",
+            cardImage: "cards/02-battle-tendency/Donovan.jpg",
         },
         {
             cardName: "Esidisi Flames",

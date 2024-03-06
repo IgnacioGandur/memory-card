@@ -9,6 +9,7 @@ const PlayAgainScreen = ({
     currentGifs,
     resetDefaultSongList,
     resetDefaultGifs,
+    resetDefaultVoiceLine,
 }) => {
     // SFX
     const darbySfx = new Audio(darbyGood);
@@ -53,6 +54,7 @@ const PlayAgainScreen = ({
                         playAgain(true);
                         resetDefaultSongList();
                         resetDefaultGifs();
+                        resetDefaultVoiceLine();
                     }}
                 >
                     Choose another season

@@ -18,22 +18,40 @@ const Game = () => {
     const [highestScore, setHighestScore] = useState(0);
     const [characterIndex, setCharacterIndex] = useState(0);
     const [currentVoiceLine, setCurrentVoiceLine] = useState(
-        mainCharacters[characterIndex].voiceLine,
+        new Audio(mainCharacters[characterIndex].voiceLine),
     );
     const [currentSongList, setCurrentSongList] = useState(
         mainCharacters[0].songs,
     );
     const [currentGifs, setCurrentGifs] = useState(mainCharacters[0].gifs);
-    const selectedVoiceLine = new Audio(currentVoiceLine);
-    selectedVoiceLine.volume = "0.2";
+    const [delayBeforePlayingSong, setDelayBeforePlayingSong] = useState(
+        currentVoiceLine.duration,
+    );
 
+    // Get the duration of the selected character to use it as a delay before playing the song.
+    const handleDelayValue = (value) => {
+        if (isNaN(value)) {
+            return;
+        } else {
+            const delay = Number(
+                value.toString().split(".").join("").slice(0, 4),
+            );
+            console.log(delay);
+            setDelayBeforePlayingSong(delay);
+        }
+    };
+
+    // When character index changes set the corresponding gifs, voiceLine and delay value.
     useEffect(() => {
-        setCurrentVoiceLine(mainCharacters[characterIndex].voiceLine);
         setCurrentGifs(mainCharacters[characterIndex].gifs);
+        setCurrentVoiceLine(
+            new Audio(mainCharacters[characterIndex].voiceLine),
+        );
+        handleDelayValue(currentVoiceLine.duration);
     }, [characterIndex]);
 
     const playVoiceLine = () => {
-        selectedVoiceLine.play();
+        currentVoiceLine.play();
     };
 
     const handleLoad = () => {
@@ -71,7 +89,7 @@ const Game = () => {
         }
     };
 
-    // Show loadin screen of 5 seconds before going to the game.
+    // Show loadin screen for 5 seconds before going to the game.
     useEffect(() => {
         setTimeout(() => {
             handleLoad();
@@ -91,6 +109,12 @@ const Game = () => {
 
     const resetDefaultGifs = () => {
         setCurrentGifs(mainCharacters[0].gifs);
+    };
+
+    const resetDefaultVoiceLine = () => {
+        setCurrentVoiceLine(new Audio(mainCharacters[0].voiceLine));
+        const newDelay = new Audio(mainCharacters[0].voiceLine);
+        handleDelayValue(newDelay.duration);
     };
 
     // Ref hook to control the music when the game is playing.
@@ -126,6 +150,7 @@ const Game = () => {
                                 currentGifs={currentGifs}
                                 resetDefaultSongList={resetDefaultSongList}
                                 resetDefaultGifs={resetDefaultGifs}
+                                resetDefaultVoiceLine={resetDefaultVoiceLine}
                             />
                         ) : (
                             <>
@@ -151,6 +176,7 @@ const Game = () => {
                         gameStarted={gameStarted}
                         playVoiceLine={playVoiceLine}
                         currentSongList={currentSongList}
+                        delayBeforePlayingSong={delayBeforePlayingSong}
                     />
                 </>
             )}

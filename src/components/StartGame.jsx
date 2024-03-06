@@ -15,6 +15,7 @@ const StartGame = ({
     currentGifs,
     resetDefaultSongList,
     resetDefaultGifs,
+    resetDefaultVoiceLine,
 }) => {
     const takeTurn = (card) => {
         // Prevent user from clicking the cards during the rotation animation.
@@ -168,6 +169,7 @@ const StartGame = ({
             currentGifs={currentGifs}
             resetDefaultSongList={resetDefaultSongList}
             resetDefaultGifs={resetDefaultGifs}
+            resetDefaultVoiceLine={resetDefaultVoiceLine}
         />
     ) : (
         <RenderCards
